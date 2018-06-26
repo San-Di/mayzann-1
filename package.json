@@ -7,9 +7,14 @@
     "antd-init": "^2.0.6",
     "axios": "^0.18.0",
     "prop-types": "^15.6.2",
+    "query-string": "^6.1.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+<<<<<<< HEAD
     "react-gif-player": "^0.4.1",
+=======
+    "react-github-login": "^1.0.3",
+>>>>>>> e95c736015be215732b2fb6c84ec8f2cd12326f3
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.4.0-alpha.0",
     "react-scripts": "1.1.4",
