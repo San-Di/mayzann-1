@@ -16,6 +16,6 @@ class TestComponent extends React.Component{
         </div>
         );
     }
-    }
+}
     
 export default TestComponent;

@@ -1,3 +1,11 @@
+import {
+  fetch_all_posts,
+  fetch_post,
+  delete_post,
+  edit_post,
+  upload_post
+} from '../actions/action_types';
+
 const initialState = [
   {
           id: 1,

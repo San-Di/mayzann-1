@@ -27,7 +27,7 @@ class Login extends React.Component{
       </React.Fragment>
         );
     }
-    }
+  }
     
 
 export default Login;

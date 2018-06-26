@@ -13,7 +13,7 @@ import 'antd/dist/antd.css';
 //   );
 
 let FetchTest = fetchableContainer({
-    url: 'http://192.178.1.1/get_posts'
+    url: 'http://192.178.1.7/posts'
 })(TestComponent);
 
 ReactDOM.render(

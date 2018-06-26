@@ -43,7 +43,7 @@ class UploadPost extends React.Component{
         //   this.setState({ loading: false, visible: false });
         // }, 3000);
         
-        axios.post(`https://jsonplaceholder.typicode.com/users`, { post })
+        axios.post(`http://192.178.1.1/posts`, { post })
       .then(res => {
         console.log(res);
         console.log(res.data);

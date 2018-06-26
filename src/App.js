@@ -14,12 +14,12 @@ import AddPost from './containers/AddPost';
 import { connect } from 'tls';
 import {addState} from './actions/index';
 
-export const store = createStore(
+const store = createStore(
     rootReducer
   );
 
   const PostList = fetchableContainer({
-    url: 'http://192.178.1.1/get_posts'
+    url: 'http://192.178.1.7/posts'
 })(Posts);
 export class App extends Component {
   constructor(props){
@@ -45,41 +45,16 @@ export class App extends Component {
   }
 }
 
-function BarNyar ({props,match}) {
-  const new_state = {
-    id: 10,
-    title: 'New State',
-    content: 'post 10 content',
-    user:'Sandi' 
-  }
-  return(
-    <h1>Hello BarNyar{match.params.id}
-    <button onClick={props.onAdd}> Click me</button>
-    {console.log(store.getState())}
-    </h1>
+const BarNyar = (props) => {
+  
+  return (
+    <div>
+      Blah Blah {console.log(props.location.search)}
+      </div>
   )
+
 }
 
 
-// const mapDispatchToProps = dispatch => {
-//   return{
-//     onAddState: sample => {
-//       dispatch(addState(sample))
-//     }
-//   }
-// }
 
-// export default connect(null,mapDispatchToProps)(BarNyar);
 
-const mapDispatchToProps = dispatch => {
-  return {
-    onAdd: () => {
-      dispatch(addState());
-    }
-  };
-};
-
-// export default connect(
-//   null,
-//   mapDispatchToProps
-// )(BarNyar);
